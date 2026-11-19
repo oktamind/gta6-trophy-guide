@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Leonida Legend — the offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI, with cited guides, a platinum roadmap and a spoiler-safe checklist.">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida <span>Legend</span></h1>
+    <p class="lede">Every trophy, its official wording, a guide in our own words that cites its sources, and a checklist that remembers where you are. No online trophies. One missable. About 200 hours to the platinum.</p>
+    <div class="stats" id="stats">
+      <div class="stat"><strong id="stat-earned">0</strong><span>of 55 earned</span></div>
+      <div class="stat"><strong>1</strong><span>platinum</span></div>
+      <div class="stat"><strong>2</strong><span>gold</span></div>
+      <div class="stat"><strong>6</strong><span>silver</span></div>
+      <div class="stat"><strong>46</strong><span>bronze</span></div>
+      <div class="stat warn"><strong>1</strong><span>missable</span></div>
+      <div class="stat"><strong>0</strong><span>online</span></div>
+    </div>
+    <div class="progress-wrap" aria-label="Progress to platinum">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <p class="progress-text" id="progress-text">0 of 55 &middot; 0% to the platinum</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap">
+    <h2>The road to the platinum</h2>
+    <p class="section-note">Five stages, in the order that wastes the least replay. The game has no mission replay and no New Game Plus, so the save habits in stage 1 protect everything after it. Never use cheats on your trophy save — they switch trophies off.</p>
+    <ol class="stages" id="stages">
+      <li data-stage="1">
+        <h3><span class="stage-num">Stage 1</span> Story first, save smart</h3>
+        <p>Chapters 1 to 4 and the finale. Make a manual save at the start of every chapter and one before the final mission. Do the Chapter 1 meditation spot before Chapter 1 ends — it is the one missable trophy in the set.</p>
+        <p class="stage-count" data-stage-count="1"></p>
+      </li>
+      <li data-stage="2">
+        <h3><span class="stage-num">Stage 2</span> Strangers &amp; partners</h3>
+        <p>Eight stranger strands across Leonida, the five named stranger finales, and the trophies you earn with your partner beside you. Start every strand you find; only finished strands count.</p>
+        <p class="stage-count" data-stage-count="2"></p>
+      </li>
+      <li data-stage="3">
+        <h3><span class="stage-num">Stage 3</span> Activities &amp; skill</h3>
+        <p>Races, drone races, the shooting range, stunts, fishing, arcade games, bowling and challenges. Long grinds, not hard ones — fold them into your travelling instead of grinding each in one sitting.</p>
+        <p class="stage-count" data-stage-count="3"></p>
+      </li>
+      <li data-stage="4">
+        <h3><span class="stage-num">Stage 4</span> Collectibles &amp; exploration</h3>
+        <p>Card sets, WAiNK scans, vehicle discovery, meditation spots and all 52 areas of Leonida. Travel everywhere with the WAiNK app open and the count climbs on its own.</p>
+        <p class="stage-count" data-stage-count="4"></p>
+      </li>
+      <li data-stage="5">
+        <h3><span class="stage-num">Stage 5</span> Money, robberies &amp; cleanup</h3>
+        <p>Bank vaults, jewelry stores, armored trucks, gang operations, marked bills, garages — then the in-game 100% checklist, and the platinum follows.</p>
+        <p class="stage-count" data-stage-count="5"></p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="tracker" id="tracker">
+    <h2>The checklist</h2>
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission or keyword…" autocomplete="off"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort">
+          <option value="roadmap">Roadmap order</option>
+          <option value="grade">Grade, best first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoiler" type="checkbox" checked> Spoiler-safe <span>hide story names until earned</span></label>
+      <label class="toggle"><input id="earned-only" type="checkbox"> Earned only</label>
+    </div>
+    <div class="kinds" id="kinds" role="group" aria-label="Filter by kind"></div>
+    <p class="result-count" id="result-count"></p>
+    <div class="cards" id="cards"></div>
+    <p class="empty" id="empty" hidden>No trophies match these filters. Clear the search or pick another kind.</p>
+  </section>
+
+  <section class="tools">
+    <h2>Your progress lives in this browser</h2>
+    <p>Ticking a trophy saves it in this browser's local storage — nothing leaves your machine. Export a backup file before you clear browser data, and import it back on any machine running this guide.</p>
+    <div class="tool-buttons">
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset progress</button>
+    </div>
+    <p class="tool-status" id="tool-status" role="status"></p>
+  </section>
+
+  <section class="method">
+    <h2>How this guide was made</h2>
+    <p>Names, descriptions and grades are the official list as PlayStation publishes it, as reported from Exophase and cross-checked with PSNProfiles on 18 November 2026. Every guide is written in our own words for this entry and names its sources beside it. Seven trophies carry an <strong>unconfirmed at launch</strong> note: no launch-week source confirms a method for them yet, and this guide says so instead of inventing one. Counts used in the guides — 250 stunts, 100 vehicles, 100 WAiNK locations, 50 challenges, 3 card sets, 8 stranger strands, 52 areas, 18 meditation spots, 14 drone-race locations, 42 shooting-range challenges, 8 garages, 9 activity types — come from the official descriptions and the launch-week guides cited beside each trophy.</p>
+    <p class="sources-line">Sources cited throughout: Exophase and PSNProfiles (the official list), PowerPyx, Planet GTA 6, Output Lag, KeenGamer, Press-Start, EGamers, All.gg, U7BUY and GTA Vice City Hub. Links open only when you follow them; this page fetches nothing over the network.</p>
+    <p class="disclaimer">An unofficial fan guide. Not affiliated with Rockstar Games, Take-Two Interactive or PlayStation. Grand Theft Auto, GTA and the Rockstar marks belong to their owners; no official artwork, logos or game screenshots are used here.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Legend &middot; GTA VI trophy guide &amp; tracker &middot; 55 trophies, 0 online, 1 missable, about 200 hours.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
